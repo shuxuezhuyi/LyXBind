@@ -13,6 +13,8 @@ Format 1
 # 9 引导区 : 数字区用于成对的符号. 字母区主要用于集合相关的符号.
 # 4 引导区 : 杂项, 常用命令.
 # Alt + m 引导区 : 用于输入特殊字体的字母.
+# Alt + comma 引导区 : 用于应付一些特殊的输入要求.
+# Alt + period 引导区 : 用于输入函数.
 
 #
 
@@ -66,6 +68,7 @@ Format 1
 \bind "M-k"			"math-insert ^"
 
 \bind "Escape"         "escape"
+\bind "dollar"		"line-end"
 
 # Alt + i 引导区
 
@@ -88,39 +91,6 @@ Format 1
 # environment
 #
 
-
-\bind "M-n M-n"		"layout Standard"
-
-\bind "M-n 1"		"layout Conjecture"
-\bind "M-n 2"			"layout Lemma"
-\bind "M-n 3"			"layout Theorem"
-\bind "M-n 4"			"layout Proposition"
-\bind "M-n 5"			"layout Corollary"
-\bind "M-n 6"		"layout Problem"
-\bind "M-n 7"		"layout Example"
-\bind "M-n 8"	"layout Definition"
-\bind "M-n 9"		"layout Remark"
-\bind "M-n 0"		"layout Exercise"
-\bind "M-n minus"		"layout Claim"
-\bind "M-n space"	"flex-insert ProofAsInset"
-\bind "M-n comma"	"flex-insert HINTAsInset"
-#\bind "M-n space"	"layout Proof"
-#\bind "M-n comma"	"layout HINT"
-
-\bind "M-n F1"		"layout Conjecture*"
-\bind "M-n F2"		"layout Lemma*"
-\bind "M-n F3"		"layout Theorem*"
-\bind "M-n F4"		"layout Proposition*"
-\bind "M-n F5"		"layout Corollary*"
-\bind "M-n F6"		"layout Problem*"
-\bind "M-n F7"		"layout Example*"
-\bind "M-n F8"		"layout Definition*"
-\bind "M-n F9"		"layout Remark*"
-\bind "M-n F10"		"layout Exercise*"
-\bind "M-n F11"		"layout Claim*"
-
-\bind "M-n period"		"layout --Separator--"
-
 \bind "M-n x"		"command-sequence math-display; math-insert \xymatrix"
 \bind "M-n f"		"inset-modify tabular append-row"
 \bind "M-n d"		"inset-modify tabular delete-row"
@@ -131,75 +101,18 @@ Format 1
 
 
 
-# o 引导区
-
-# Greek
-
-\bind "o a"	"math-insert \alpha"
-\bind "o b"	"math-insert \beta"
-\bind "o c"	"math-insert \chi"
-\bind "o d"	"math-insert \delta"
-\bind "o e"	"math-insert \varepsilon"
-\bind "o f"	"math-insert \varphi"
-\bind "o g"	"math-insert \gamma"
-\bind "o h"	"math-insert \eta"
-#\bind "o i"	"math-insert "
-\bind "o j"	"math-insert \psi"
-\bind "o k"	"math-insert \kappa"
-\bind "o l"	"math-insert \lambda"
-#\bind "o m"	"math-insert  "
-#\bind "o n"	"math-insert  "
-\bind "o o"	"math-insert \omega"
-\bind "o p"	"math-insert \pi"
-\bind "o q"	"math-insert \phi"
-\bind "o r"	"math-insert \rho"
-\bind "o s"	"math-insert \sigma"
-\bind "o t"	"math-insert \tau"
-\bind "o u"	"math-insert \mu"
-\bind "o v"	"math-insert \nu"
-\bind "o w"	"math-insert \theta"
-\bind "o x"	"math-insert \xi"
-#\bind "o y"	"math-insert "
-\bind "o z"	"math-insert \zeta"
-\bind "o S-A"	"math-insert \aleph"
-#\bind "o S-B"	"math-insert  "
-#\bind "o S-C"	"math-insert  "
-\bind "o S-D"	"math-insert \Delta"
-\bind "o S-E"	"math-insert \epsilon"
-\bind "o S-F"	"math-insert \Phi"
-\bind "o S-G"	"math-insert \Gamma"
-#\bind "o S-H"	"math-insert  "
-#\bind "o S-I"	"math-insert "
-\bind "o S-J"	"math-insert \Psi"
-#\bind "o S-K"	"math-insert  "
-\bind "o S-L"	"math-insert \Lambda"
-#\bind "o S-M"	"math-insert  "
-#\bind "o S-N"	"math-insert  "
-\bind "o S-O"	"math-insert \Omega"
-\bind "o S-P"	"math-insert \Pi"
-#\bind "o S-Q"	"math-insert "
-\bind "o S-R"	"math-insert \varrho"
-\bind "o S-S"	"math-insert \Sigma"
-#\bind "o S-T"	"math-insert "
-\bind "o S-U"	"math-insert \Upsilon"
-#\bind "o S-V"	"math-insert  "
-\bind "o S-W"	"math-insert \Theta"
-\bind "o S-X"	"math-insert \Xi"
-#\bind "o S-Y"	"math-insert "
-#\bind "o S-Z"	"math-insert  "
-
-\bind "o 8"	"math-insert \times"
-
 # 主键盘 4 引导区
 
 \bind "4 u"		"math-insert \cdot"
 
-\bind "4 i"		"command-sequence char-left-select; math-insert ^{-1}"
+\bind "4 i"		"command-sequence math-insert ^; self-insert -1; char-right"
 \bind "4 o"		"math-insert \circ"
 \bind "4 S-O"		"math-insert \varnothing"
 
+\bind "4 h"			"math-insert \eqqcolon"
 \bind "4 j"			"math-insert \frac"
 \bind "4 k"			"math-insert \partial"
+\bind "4 l"			"math-insert \coloneqq"
 
 \bind "4 comma"		"math-insert \leqslant"
 \bind "4 period"		"math-insert \geqslant"
@@ -211,8 +124,8 @@ Format 1
 \bind "7 3"		"font-bold"
 \bind "7 4"		"font-boldsymbol"
 
-\bind "7 o"		"command-sequence char-left-select; math-insert ^{\circ}"
-\bind "7 8"		"command-sequence char-left-select; math-insert ^{*}"
+\bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
+\bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
 
 \bind "7 w"		"math-insert \overline"
 \bind "7 e"		"math-insert \acute"
@@ -222,7 +135,7 @@ Format 1
 \bind "7 d"		"math-insert \ddot"
 \bind "7 f"		"math-insert \tilde"
 \bind "7 g"		"math-insert \vec"
-#\bind "7 "		""
+\bind "7 v"		"math-insert \overbrace"
 #\bind "7 "		""
 
 \bind "7 equal"	"math-insert \equiv"
@@ -237,6 +150,7 @@ Format 1
 \bind "8 g"	"math-insert \rightarrow"
 \bind "8 x"	"math-insert \xrightarrow"
 
+\bind "8 h"	"math-insert \Longleftarrow"
 \bind "8 l"	"math-insert \Longrightarrow"
 
 \bind "8 c"	"math-insert \wedge"
@@ -326,9 +240,9 @@ Format 1
 #\bind "M-m "		""
 #\bind "M-m "		""
 
-#
-# 某日将Proof从Layout改为InsetLayout, 由于技术水平低, 不得不自己动手一一修改, 因而设了下列临时快捷键
-#
 
-#\bind "j"	"command-sequence layout Standard; flex-insert HINTAsInset; paragraph-break"
-#\bind "k"	"command-sequence layout Standard; flex-insert ProofAsInset; paragraph-break"
+\bind_file ~/lyx/LyXBind/o.bind
+\bind_file ~/lyx/LyXBind/layout.bind
+\bind_file ~/lyx/LyXBind/chinese.bind
+\bind_file ~/lyx/LyXBind/comma_RG.bind
+\bind_file ~/lyx/LyXBind/period.bind

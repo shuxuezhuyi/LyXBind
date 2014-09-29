@@ -1,0 +1,11 @@
+# -*- text -*-
+
+Format 1
+
+\bind "M-period l"	"math-insert \lim"
+\bind "M-period s"	"math-insert \sup"
+\bind "M-period i"	"math-insert \inf"
+\bind "M-period k"	"math-insert \ker"
+\bind "M-period d"	"math-insert \det"
+\bind "M-period m"	"math-insert \min"
+\bind "M-period S-M"	"math-insert \max"
