@@ -1,0 +1,22 @@
+# -*- text -*-
+
+Format 1
+
+#
+# Alt + m 引导区, 临时引导区, 一般用于特殊字体的字母
+#
+
+\bind "M-m r"		"command-sequence math-insert \mathbb{R}; repeat 2 char-right"
+\bind "M-m c"		"command-sequence math-insert \mathbb{C}; repeat 2 char-right"
+\bind "M-m k"		"command-sequence math-insert \mathbb{K}; repeat 2 char-right"
+\bind "M-m z"		"command-sequence math-insert \mathbb{Z}; repeat 2 char-right"
+
+\bind "M-m d"		"command-sequence math-insert \mathrm{d}; repeat 2 char-right"
+
+
+# 以下为花体
+\bind "M-m a"		"command-sequence math-insert \mathcal{A}; repeat 2 char-right"
+\bind "M-m b"		"command-sequence math-insert \mathcal{B}; repeat 2 char-right"
+\bind "M-m f"		"command-sequence math-insert \mathcal{F}; repeat 2 char-right"
+\bind "M-m l"		"command-sequence math-insert \mathcal{L}; repeat 2 char-right"
+\bind "M-m p"		"command-sequence math-insert \mathcal{P}; repeat 2 char-right"

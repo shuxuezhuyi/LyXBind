@@ -1,0 +1,15 @@
+# -*- text -*-
+
+Format 1
+
+\bind "M-comma a"		"command-sequence math-insert \mathcal{A}; repeat 2 char-right"
+\bind "M-comma b"		"command-sequence math-insert \mathcal{B}; repeat 2 char-right"
+\bind "M-comma c"		"command-sequence math-insert \mathcal{C}; repeat 2 char-right"
+\bind "M-comma e"		"command-sequence math-insert \mathcal{E}; repeat 2 char-right"
+\bind "M-comma f"		"command-sequence math-insert \mathcal{F}; repeat 2 char-right"
+\bind "M-comma g"		"command-sequence math-insert \mathcal{G}; repeat 2 char-right"
+\bind "M-comma h"		"command-sequence math-insert \mathcal{H}; repeat 2 char-right"
+\bind "M-comma k"		"command-sequence math-insert \mathcal{K}; repeat 2 char-right"
+\bind "M-comma l"		"command-sequence math-insert \mathcal{L}; repeat 2 char-right"
+\bind "M-comma n"		"command-sequence math-insert \mathcal{N}; repeat 2 char-right"
+\bind "M-comma t"		"command-sequence math-insert \mathcal{T}; repeat 2 char-right"

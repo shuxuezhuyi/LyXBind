@@ -130,6 +130,7 @@ Format 1
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
+\bind "7 semicolon"	"command-sequence math-insert ^; self-insert +; char-right"
 
 \bind "7 w"		"math-insert \overline"
 \bind "7 e"		"math-insert \acute"
@@ -214,45 +215,8 @@ Format 1
 \bind "9 3"			"math-delim Vert Vert"
 \bind "9 2"			"math-delim | |"
 
-#
-# Alt + m 引导区, 临时引导区, 一般用于特殊字体的字母
-#
-
-\bind "M-m r"		"command-sequence math-insert \mathbb{R}; repeat 2 char-right"
-\bind "M-m c"		"command-sequence math-insert \mathbb{C}; repeat 2 char-right"
-\bind "M-m k"		"command-sequence math-insert \mathbb{K}; repeat 2 char-right"
-\bind "M-m z"		"command-sequence math-insert \mathbb{Z}; repeat 2 char-right"
-
-\bind "M-m d"		"command-sequence math-insert \mathrm{d}; repeat 2 char-right"
-
-
-# 以下为哥特字体, 交换代数用的
-#\bind "M-m a"		"command-sequence math-insert \mathfrak{a}; repeat 2 char-right"
-#\bind "M-m b"		"command-sequence math-insert \mathfrak{b}; repeat 2 char-right"
-#\bind "M-m m"		"command-sequence math-insert \mathfrak{m}; repeat 2 char-right"
-#\bind "M-m p"		"command-sequence math-insert \mathfrak{p}; repeat 2 char-right"
-#\bind "M-m q"		"command-sequence math-insert \mathfrak{q}; repeat 2 char-right"
-
-# 以下为花体
-\bind "M-m a"		"command-sequence math-insert \mathcal{A}; repeat 2 char-right"
-\bind "M-m b"		"command-sequence math-insert \mathcal{B}; repeat 2 char-right"
-#\bind "M-m d"		"command-sequence math-insert \mathcal{D}; repeat 2 char-right"
-\bind "M-m p"		"command-sequence math-insert \mathcal{P}; repeat 2 char-right"
-
-
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-#\bind "M-m "		""
-
 
 \bind_file ~/lyx/LyXBind/o.bind
 \bind_file ~/lyx/LyXBind/layout.bind
 \bind_file ~/lyx/LyXBind/chinese.bind
-\bind_file ~/lyx/LyXBind/comma_RG.bind
 \bind_file ~/lyx/LyXBind/period.bind
