@@ -3,6 +3,7 @@
 Format 1
 
 \bind "M-period w"	"math-insert \dim"
+\bind "M-period e"	"math-insert \exp"
 \bind "M-period t"	"math-insert \tan"
 \bind "M-period y"	"math-insert \cos"
 \bind "M-period i"	"math-insert \inf"

@@ -13,6 +13,7 @@ Format 1
 
 \bind "M-m d"		"command-sequence math-insert \mathrm{d}; repeat 2 char-right"
 
+\bind "M-m h"		"command-sequence math-insert \mathbb{H}; repeat 2 char-right"
 
 # 以下为花体
 \bind "M-m a"		"command-sequence math-insert \mathcal{A}; repeat 2 char-right"

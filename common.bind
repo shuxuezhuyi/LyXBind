@@ -105,6 +105,8 @@ Format 1
 
 # 主键盘 4 引导区
 
+\bind "4 4"		"self-insert 4"
+
 \bind "4 u"		"math-insert \cdot"
 
 \bind "4 i"		"command-sequence math-insert ^; self-insert -1; char-right"
@@ -118,8 +120,10 @@ Format 1
 
 \bind "4 m"		"math-ams-matrix 2 2 pmatrix"
 
+\bind "4 semicolon"	"math-insert \qquad"
 \bind "4 comma"		"math-insert \leqslant"
 \bind "4 period"		"math-insert \geqslant"
+\bind "4 slash"		"math-insert \cancel"
 
 
 # 主键盘 7 引导区
@@ -138,8 +142,8 @@ Format 1
 \bind "7 t"		"math-insert \grave"
 \bind "7 s"		"math-insert \dot"
 \bind "7 d"		"math-insert \ddot"
-\bind "7 f"		"math-insert \tilde"
-\bind "7 g"		"math-insert \vec"
+\bind "7 f"		"math-insert \widetilde"
+\bind "7 g"		"math-insert \overrightarrow"
 \bind "7 v"		"math-insert \widehat"
 \bind "7 b"		"math-insert \overbrace"
 #\bind "7 "		""
@@ -158,8 +162,8 @@ Format 1
 \bind "8 x"	"math-insert \xrightarrow"
 
 \bind "8 h"	"math-insert \Longleftarrow"
-\bind "8 j"	"math-insert \bot"
-\bind "8 k"	"math-insert \top"
+\bind "8 j"	"math-insert \top"
+\bind "8 k"	"math-insert \bot"
 \bind "8 l"	"math-insert \Longrightarrow"
 
 \bind "8 c"	"math-insert \wedge"
