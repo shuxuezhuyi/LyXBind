@@ -20,7 +20,6 @@ Format 1
 
 #\bind "F10"			"ui-toggle fullscreen"
 
-
 # Ctrl 引导区
 
 \bind "C-b"			"font-bold"
@@ -59,13 +58,13 @@ Format 1
 
 \bind "M-p"			"math-insert ="
 \bind "M-semicolon"		"math-insert +"
-\bind "M-slash"			"math-insert -"
+\bind "M-slash"			"command-sequence self-insert -"
 
 \bind "M-h"			"char-left"
 \bind "M-l"			"char-right"
 
-\bind "M-j"			"math-insert _"
-\bind "M-k"			"math-insert ^"
+\bind "M-j"	"command-sequence self-insert _"
+\bind "M-k"	"command-sequence self-insert ^"
 
 \bind "Escape"         "escape"
 \bind "dollar"		"line-end"
@@ -135,6 +134,8 @@ Format 1
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
 \bind "7 semicolon"	"command-sequence math-insert ^; self-insert +; char-right"
+\bind "7 j"		"command-sequence math-insert ^; math-insert \top; char-right"
+\bind "7 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
 
 \bind "7 w"		"math-insert \overline"
 \bind "7 e"		"math-insert \acute"
@@ -146,7 +147,6 @@ Format 1
 \bind "7 g"		"math-insert \overrightarrow"
 \bind "7 v"		"math-insert \widehat"
 \bind "7 b"		"math-insert \overbrace"
-#\bind "7 "		""
 
 \bind "7 equal"	"math-insert \equiv"
 \bind "7 p"	"math-insert \equiv"
