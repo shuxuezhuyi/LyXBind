@@ -111,6 +111,7 @@ Format 1
 \bind "4 i"		"command-sequence math-insert ^; self-insert -1; char-right"
 \bind "4 o"		"math-insert \circ"
 \bind "4 S-O"		"math-insert \varnothing"
+\bind "4 p"		"math-insert \simeq"
 
 \bind "4 h"			"math-insert \eqqcolon"
 \bind "4 j"			"math-insert \frac"
