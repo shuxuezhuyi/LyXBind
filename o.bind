@@ -4,6 +4,8 @@ Format 1
 
 # o 引导区
 
+\bind "S-O"	"self-insert O"
+
 # Greek
 
 \bind "o a"	"math-insert \alpha"

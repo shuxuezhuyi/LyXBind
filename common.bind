@@ -126,14 +126,21 @@ Format 1
 \bind "4 slash"		"math-insert \cancel"
 
 
+# 主键盘 5 引导区
+
+\bind "5 j"		"command-sequence math-insert ^; math-insert \top; char-right"
+\bind "5 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
+
+
 # 主键盘 7 引导区
 
-\bind "7 2"		"font-roman"
+\bind "7 2"		"math-insert \mathrm"
 \bind "7 3"		"font-bold"
 \bind "7 4"		"font-boldsymbol"
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
+\bind "7 9"		"command-sequence math-insert _; self-insert *; char-right"
 \bind "7 semicolon"	"command-sequence math-insert ^; self-insert +; char-right"
 \bind "7 j"		"command-sequence math-insert ^; math-insert \top; char-right"
 \bind "7 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
