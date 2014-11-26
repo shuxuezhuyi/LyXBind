@@ -104,6 +104,7 @@ Format 1
 
 # 主键盘 4 引导区
 
+\bind "4 2"		"math-insert \sqrt"
 \bind "4 4"		"self-insert 4"
 
 \bind "4 u"		"math-insert \cdot"
@@ -142,8 +143,6 @@ Format 1
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
 \bind "7 9"		"command-sequence math-insert _; self-insert *; char-right"
 \bind "7 semicolon"	"command-sequence math-insert ^; self-insert +; char-right"
-\bind "7 j"		"command-sequence math-insert ^; math-insert \top; char-right"
-\bind "7 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
 
 \bind "7 w"		"math-insert \overline"
 \bind "7 e"		"math-insert \acute"
@@ -176,6 +175,8 @@ Format 1
 
 \bind "8 c"	"math-insert \wedge"
 \bind "8 v"	"math-insert \vee"
+
+\bind "8 r"	"math-insert \rightharpoonup"
 \bind "8 t"	"math-insert \mapsto"
 
 \bind "8 b"	"math-insert \hookrightarrow"

@@ -1,0 +1,7 @@
+# -*- text -*-
+
+Format 1
+
+\bind_file ~/lyx/LyXBind/common.bind
+\bind_file ~/lyx/LyXBind/m.bind
+\bind_file ~/lyx/LyXBind/temp_FA.bind
