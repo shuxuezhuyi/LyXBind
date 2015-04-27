@@ -138,6 +138,7 @@ Format 1
 \bind "7 2"		"math-insert \mathrm"
 \bind "7 3"		"font-bold"
 \bind "7 4"		"font-boldsymbol"
+\bind "7 5"		"math-insert \mathcal"
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"

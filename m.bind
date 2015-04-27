@@ -10,6 +10,7 @@ Format 1
 \bind "M-m c"		"command-sequence math-insert \mathbb{C}; repeat 2 char-right"
 \bind "M-m k"		"command-sequence math-insert \mathbb{K}; repeat 2 char-right"
 \bind "M-m z"		"command-sequence math-insert \mathbb{Z}; repeat 2 char-right"
+\bind "M-m n"		"command-sequence math-insert \mathbb{N}; repeat 2 char-right"
 
 \bind "M-m d"		"command-sequence math-insert \mathrm{d}; repeat 2 char-right"
 
