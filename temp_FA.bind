@@ -15,3 +15,5 @@ Format 1
 \bind "M-comma l"		"command-sequence math-insert \mathcal{L}; repeat 2 char-right"
 \bind "M-comma n"		"command-sequence math-insert \mathcal{N}; repeat 2 char-right"
 \bind "M-comma t"		"command-sequence math-insert \mathcal{T}; repeat 2 char-right"
+\bind "M-comma comma"	"command-sequence math-insert L_{\mathrm{loc}}; repeat 2 char-right"
+\bind "M-comma period"	"command-sequence math-insert W_{\mathrm{loc}}; repeat 2 char-right"

@@ -25,3 +25,10 @@ Format 1
 # 以下为花体
 \bind "M-m f"		"command-sequence math-insert \mathcal{F}; repeat 2 char-right"
 \bind "M-m l"		"command-sequence math-insert \mathcal{L}; repeat 2 char-right"
+
+#
+# Alt + , 引导区
+#
+
+\bind "M-comma h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
+\bind "M-comma s"		"command-sequence math-insert \mathrm{Spec}; repeat 5 char-right"

@@ -11,7 +11,7 @@ Format 1
 # 7 引导区 : 用于修饰手段, 例如字体与重音符号.
 # 8 引导区 : 字母区用于具有明显方向感的符号.
 # 9 引导区 : 数字区用于成对的符号. 字母区主要用于集合相关的符号.
-# 4 引导区 : 杂项, 常用命令.
+# 4 5 引导区 : 杂项, 常用命令.
 # Alt + m 引导区 : 用于输入特殊字体的字母.
 # Alt + comma 引导区 : 用于应付一些特殊的输入要求.
 # Alt + period 引导区 : 用于输入函数.
@@ -107,6 +107,8 @@ Format 1
 \bind "4 2"		"math-insert \sqrt"
 \bind "4 4"		"self-insert 4"
 
+\bind "4 t"		"math-insert \triangle"
+
 \bind "4 u"		"math-insert \cdot"
 
 \bind "4 i"		"command-sequence math-insert ^; self-insert -1; char-right"
@@ -114,11 +116,14 @@ Format 1
 \bind "4 S-O"		"math-insert \varnothing"
 \bind "4 p"		"math-insert \simeq"
 
+\bind "4 s"		"math-insert \substack"
+
 \bind "4 h"			"math-insert \eqqcolon"
 \bind "4 j"			"math-insert \frac"
 \bind "4 k"			"math-insert \partial"
 \bind "4 l"			"math-insert \coloneqq"
 
+\bind "4 c"		"math-insert \cases"
 \bind "4 m"		"math-ams-matrix 2 2 pmatrix"
 
 \bind "4 semicolon"	"math-insert \qquad"
@@ -132,13 +137,19 @@ Format 1
 \bind "5 j"		"command-sequence math-insert ^; math-insert \top; char-right"
 \bind "5 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
 
+\bind "5 m"		"math-insert \pmod"
+
+\bind "5 comma"	"math-insert \,"
+
 
 # 主键盘 7 引导区
 
 \bind "7 2"		"math-insert \mathrm"
-\bind "7 3"		"font-bold"
+
 \bind "7 4"		"font-boldsymbol"
 \bind "7 5"		"math-insert \mathcal"
+
+\bind "7 7"		"font-bold"
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
