@@ -12,6 +12,7 @@ Format 1
 
 \bind "M-period s"	"math-insert \sup"
 \bind "M-period d"	"math-insert \det"
+\bind "M-period g"	"math-insert \deg"
 \bind "M-period k"	"math-insert \ker"
 
 \bind "M-period o"	"math-insert \limsup"

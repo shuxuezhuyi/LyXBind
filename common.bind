@@ -99,6 +99,7 @@ Format 1
 
 \bind "M-n m"		"math-display"
 \bind "M-n a"		"math-mutate align"
+\bind "M-n z"		"math-mutate multline"
 
 
 
@@ -106,6 +107,8 @@ Format 1
 
 \bind "4 2"		"math-insert \sqrt"
 \bind "4 4"		"self-insert 4"
+
+\bind "4 minus"	"math-insert \underset"
 
 \bind "4 t"		"math-insert \triangle"
 
@@ -144,8 +147,9 @@ Format 1
 
 # 主键盘 7 引导区
 
+\bind "7 1"		"math-insert \mathfrak"
 \bind "7 2"		"math-insert \mathrm"
-
+\bind "7 3"		"math-insert \mathbb"
 \bind "7 4"		"font-boldsymbol"
 \bind "7 5"		"math-insert \mathcal"
 
@@ -164,6 +168,8 @@ Format 1
 \bind "7 d"		"math-insert \ddot"
 \bind "7 f"		"math-insert \widetilde"
 \bind "7 g"		"math-insert \overrightarrow"
+\bind "7 h"		"math-insert \underleftarrow"
+\bind "7 l"		"math-insert \underrightarrow"
 \bind "7 v"		"math-insert \widehat"
 \bind "7 b"		"math-insert \overbrace"
 
@@ -197,6 +203,11 @@ Format 1
 
 \bind "8 equal"	"math-insert \Longleftrightarrow"
 \bind "8 p"	"math-insert \Longleftrightarrow"
+
+# 主键盘 8 9 引导区
+
+\bind "8 9 s"	"math-insert \nsupseteq"
+\bind "8 9 g"	"math-insert \nsubseteq"
 
 
 # 主键盘 9 引导区
