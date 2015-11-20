@@ -170,6 +170,7 @@ Format 1
 \bind "7 g"		"math-insert \overrightarrow"
 \bind "7 h"		"math-insert \underleftarrow"
 \bind "7 l"		"math-insert \underrightarrow"
+\bind "7 x"		"math-insert \underline"
 \bind "7 v"		"math-insert \widehat"
 \bind "7 b"		"math-insert \overbrace"
 
@@ -243,13 +244,20 @@ Format 1
 
 # These do pairs of: () {} [] <> ||
 
-\bind "9 9"		"math-delim ( )"
-\bind "9 8"		"math-delim [ ]"
+\bind "9 S-parenleft"		"math-delim ( )"
+\bind "9 S-asterisk"		"math-delim [ ]"
+\bind "9 S-percent"			"math-delim { }"
+\bind "9 S-dollar"			"math-delim langle rangle" # produces < >
+\bind "9 S-numbersign"			"math-delim Vert Vert"
+\bind "9 S-at"			"math-delim | |"
+
+\bind "9 9"		"command-sequence math-insert (); char-left"
+\bind "9 8"		"command-sequence math-insert []; char-left"
 \bind "9 7"		"math-delim . |"
-\bind "9 5"			"math-delim { }"
-\bind "9 4"			"math-delim langle rangle" # produces < >
-\bind "9 3"			"math-delim Vert Vert"
-\bind "9 2"			"math-delim | |"
+\bind "9 5"		"command-sequence math-insert \{\}; char-left"
+\bind "9 4"		"command-sequence math-insert \langle\rangle; char-left"
+\bind "9 3"		"command-sequence math-insert \Vert\Vert; char-left"
+\bind "9 2"		"command-sequence math-insert ||; char-left"
 
 
 \bind_file ~/lyx/LyXBind/o.bind

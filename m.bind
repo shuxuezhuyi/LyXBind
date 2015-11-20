@@ -19,7 +19,10 @@ Format 1
 # 以下为花体
 \bind "M-m a"		"command-sequence math-insert \mathcal{A}; repeat 2 char-right"
 \bind "M-m b"		"command-sequence math-insert \mathcal{B}; repeat 2 char-right"
+\bind "M-m e"		"command-sequence math-insert \mathcal{E}; repeat 2 char-right"
 \bind "M-m f"		"command-sequence math-insert \mathcal{F}; repeat 2 char-right"
 \bind "M-m l"		"command-sequence math-insert \mathcal{L}; repeat 2 char-right"
+\bind "M-m o"		"command-sequence math-insert \mathcal{O}; repeat 2 char-right"
 \bind "M-m p"		"command-sequence math-insert \mathcal{P}; repeat 2 char-right"
 \bind "M-m s"		"command-sequence math-insert \mathcal{S}; repeat 2 char-right"
+\bind "M-m t"		"command-sequence math-insert \mathcal{T}; repeat 2 char-right"

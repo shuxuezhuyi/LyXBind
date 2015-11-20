@@ -10,6 +10,7 @@ Format 1
 \bind "M-period S-Y"	"math-insert \cosh"
 \bind "M-period i"	"math-insert \inf"
 
+\bind "M-period a"	"math-insert \arg"
 \bind "M-period s"	"math-insert \sup"
 \bind "M-period d"	"math-insert \det"
 \bind "M-period g"	"math-insert \deg"
