@@ -21,25 +21,47 @@ Format 1
 #\bind "F10"			"ui-toggle fullscreen"
 
 # Ctrl 引导区
-
-\bind "C-b"			"font-bold"
-\bind "C-e"			"font-emph"
-\bind "C-u"			"font-underline"
-
-\bind "C-m"			"math-display"
-
-\bind "C-c"			"copy"
-\bind "C-x"			"cut"
-\bind "C-v"			"paste"
-\bind "C-p"			"clipboard-paste"
+# 下面的 math-insert 纯粹是为了避免误按的时候输入控制字符, 因为有时候在 LyX 编辑界面看不见控制字符.
 
 \bind "C-a"			"command-sequence buffer-begin ; buffer-end-select"   # select all
+\bind "C-b"			"font-bold"
+\bind "C-c"			"copy"
+\bind "C-d"			"math-insert d"
+\bind "C-e"			"font-emph"
+\bind "C-f"			"math-insert f"
+\bind "C-g"			"math-insert g"
+\bind "C-h"			"math-insert h"
+\bind "C-i"			"math-insert i"
+\bind "C-j"			"math-insert j"
+\bind "C-k"			"math-insert k"
+\bind "C-l"			"ert-insert"		# 'l' for LaTeX
+\bind "C-m"			"math-display"
+\bind "C-n"			"math-insert n"
+\bind "C-o"			"math-insert o"
+\bind "C-p"			"clipboard-paste"
+\bind "C-q"			"math-insert q"
+\bind "C-r"			"math-insert r"
+\bind "C-s"			"buffer-write"
+\bind "C-t"			"math-insert t"
+\bind "C-u"			"font-underline"
+\bind "C-v"			"paste"
+\bind "C-w"			"math-insert w"
+\bind "C-x"			"cut"
+\bind "C-y"			"math-insert y"
+\bind "C-z"			"math-insert z"
+
+\bind "C-1"			"math-insert 1"
+\bind "C-2"			"math-insert 2"
+\bind "C-3"			"math-insert 3"
+\bind "C-4"			"math-insert 4"
+\bind "C-5"			"math-insert 5"
+\bind "C-6"			"math-insert 6"
+\bind "C-7"			"math-insert 7"
+\bind "C-8"			"math-insert 8"
+\bind "C-9"			"math-insert 9"
+\bind "C-0"			"math-insert 0"
 
 \bind "C-minus"	"specialchar-insert hyphenation"
-
-\bind "C-l"			"ert-insert"		# 'l' for LaTeX
-
-
 
 # 下面三个快捷键是为了配合 AutoHotkey 而设置的, 目的是用小键盘输入 7,8,9 三个数字.
 # 不过, 在 Alt + 7,8,9 这三个快捷键没有定义的情况下, 它们也可以用来输入 7,8,9 这三个数字.
@@ -154,6 +176,7 @@ Format 1
 \bind "7 5"		"math-insert \mathcal"
 
 \bind "7 7"		"font-bold"
+\bind "7 0"		"math-insert \mathscr"
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
