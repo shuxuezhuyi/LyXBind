@@ -129,6 +129,7 @@ Format 1
 
 \bind "4 2"		"math-insert \sqrt"
 \bind "4 4"		"self-insert 4"
+\bind "4 5"		"math-insert {}"
 
 \bind "4 minus"	"math-insert \underset"
 
@@ -155,6 +156,8 @@ Format 1
 \bind "4 comma"		"math-insert \leqslant"
 \bind "4 period"		"math-insert \geqslant"
 \bind "4 slash"		"math-insert \cancel"
+
+\bind "4 equal"		"math-insert \asymp"
 
 
 # 主键盘 5 引导区
