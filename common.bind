@@ -11,9 +11,9 @@ Format 1
 # 7 引导区 : 用于修饰手段, 例如字体与重音符号.
 # 8 引导区 : 字母区用于具有明显方向感的符号.
 # 9 引导区 : 数字区用于成对的符号. 字母区主要用于集合相关的符号.
-# 4 5 引导区 : 杂项, 常用命令.
+# 4 与 5 引导区 : 杂项, 常用命令.
 # Alt + m 引导区 : 用于输入特殊字体的字母.
-# Alt + comma 引导区 : 用于应付一些特殊的输入要求.
+# Alt + comma 与 Alt + x 引导区 : 用于应付一些特殊的需求.
 # Alt + period 引导区 : 用于输入函数.
 
 #
@@ -61,6 +61,12 @@ Format 1
 \bind "C-9"			"math-insert 9"
 \bind "C-0"			"math-insert 0"
 
+\bind "C-bracketleft"		"math-insert ["
+\bind "C-bracketright"		"math-insert ]"
+\bind "C-slash"			"math-insert /"
+\bind "C-backslash"		"math-insert \backslash"
+
+
 \bind "C-minus"	"specialchar-insert hyphenation"
 
 # 下面三个快捷键是为了配合 AutoHotkey 而设置的, 目的是用小键盘输入 7,8,9 三个数字.
@@ -90,6 +96,9 @@ Format 1
 
 \bind "Escape"         "escape"
 \bind "dollar"		"line-end"
+
+\bind "M-BackSpace" "buffer-export pdf4"
+\bind "M-backslash" "buffer-view"
 
 # Alt + i 引导区
 
@@ -220,6 +229,8 @@ Format 1
 
 \bind "8 c"	"math-insert \wedge"
 \bind "8 v"	"math-insert \vee"
+\bind "8 S-C"	"math-insert \bigwedge"
+\bind "8 S-V"	"math-insert \bigvee"
 
 \bind "8 r"	"math-insert \rightharpoonup"
 \bind "8 t"	"math-insert \mapsto"
