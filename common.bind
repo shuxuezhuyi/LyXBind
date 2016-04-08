@@ -18,6 +18,14 @@ Format 1
 
 #
 
+\bind "F1"			"menu-open file"
+\bind "F2"			"menu-open edit"
+\bind "F3"			"menu-open view"
+\bind "F4"			"menu-open insert"
+\bind "F5"			"menu-open navigate"
+\bind "F6"			"menu-open document"
+\bind "F7"			"menu-open tools"
+\bind "F8"			"menu-open help"
 #\bind "F10"			"ui-toggle fullscreen"
 
 # Ctrl 引导区
@@ -162,6 +170,7 @@ Format 1
 \bind "4 m"		"math-ams-matrix 2 2 pmatrix"
 
 \bind "4 semicolon"	"math-insert \qquad"
+\bind "4 apostrophe"	"math-insert \quad"
 \bind "4 comma"		"math-insert \leqslant"
 \bind "4 period"		"math-insert \geqslant"
 \bind "4 slash"		"math-insert \cancel"
