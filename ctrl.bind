@@ -36,7 +36,7 @@ Format 1
 \bind "C-2"			"math-insert 2"
 \bind "C-3"			"math-insert 3"
 \bind "C-4"			"math-insert 4"
-\bind "C-5"			"math-insert 5"
+\bind "C-5"			"math-insert 5" # 这个快捷键是无效的, 因为 fcitx 已经占用. 类似地, C-space 也是无效的.
 \bind "C-6"			"math-insert 6"
 \bind "C-7"			"math-insert 7"
 \bind "C-8"			"math-insert 8"
