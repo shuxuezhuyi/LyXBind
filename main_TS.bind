@@ -7,9 +7,12 @@ Format 1
 # Alt + x 引导区
 
 \bind "M-x a"           "command-sequence math-insert \mathrm{Aut}; repeat 4 char-right"
+\bind "M-x S-A"           "math-insert \mathistOperatorAd"
+\bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
 \bind "M-x i"           "math-insert \mathistOperatorIm"
 \bind "M-x m"           "command-sequence math-insert \mathrm{Mod}; repeat 4 char-right"
 \bind "M-x r"           "math-insert \mathistOperatorRe"
+\bind "M-x t"           "math-insert \mathistOperatortr"
 \bind "M-x w"           "command-sequence math-insert _; math-insert \mathrm{WP}; repeat 4 char-right"
 
 # 暂时废弃

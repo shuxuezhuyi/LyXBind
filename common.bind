@@ -140,7 +140,7 @@ Format 1
 \bind "7 2"		"math-insert \mathrm"
 \bind "7 3"		"math-insert \mathbb"
 \bind "7 4"		"font-boldsymbol"
-\bind "7 5"		"math-insert \mathcal"
+\bind "7 5"		"math-insert \mathsf"
 
 \bind "7 7"		"font-bold"
 \bind "7 0"		"math-insert \mathscr"
@@ -233,6 +233,9 @@ Format 1
 
 \bind "9 equal"	"math-insert \cong"
 \bind "9 p"	"math-insert \cong"
+
+\bind "9 comma"	"math-insert \ltimes"
+\bind "9 period"	"math-insert \rtimes"
 
 # These do pairs of: () {} [] <> ||
 
