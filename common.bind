@@ -68,6 +68,7 @@ Format 1
 \bind "M-i 9"		"index-insert"
 \bind "M-i 0"		"nomencl-insert"
 \bind "M-i semicolon"	"dialog-show-new-inset ref"
+\bind "M-i apostrophe"	"dialog-show-new-inset citation"
 
 # Alt + n 引导区
 
@@ -139,7 +140,7 @@ Format 1
 \bind "7 1"		"math-insert \mathfrak"
 \bind "7 2"		"math-insert \mathrm"
 \bind "7 3"		"math-insert \mathbb"
-\bind "7 4"		"font-boldsymbol"
+\bind "7 4"		"math-insert \boldsymbol"
 \bind "7 5"		"math-insert \mathsf"
 
 \bind "7 7"		"font-bold"

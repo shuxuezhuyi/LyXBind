@@ -8,6 +8,7 @@ Format 1
 
 \bind "M-x a"           "command-sequence math-insert \mathrm{Aut}; repeat 4 char-right"
 \bind "M-x S-A"           "math-insert \mathistOperatorAd"
+\bind "M-x d"		"command-sequence math-insert \mathrm{AdS}; repeat 4 char-right"
 \bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
 \bind "M-x i"           "math-insert \mathistOperatorIm"
 \bind "M-x m"           "command-sequence math-insert \mathrm{Mod}; repeat 4 char-right"
