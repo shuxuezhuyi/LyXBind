@@ -28,9 +28,8 @@ Format 1
 
 \bind_file ~/lyx/LyXBind/common.bind
 \bind_file ~/lyx/LyXBind/ctrl.bind
-\bind_file ~/lyx/LyXBind/o.bind
+\bind_file ~/lyx/LyXBind/M-o.bind
 \bind_file ~/lyx/LyXBind/layout.bind
-\bind_file ~/lyx/LyXBind/chinese.bind
 \bind_file ~/lyx/LyXBind/period.bind
 \bind_file ~/lyx/LyXBind/comma.bind
 \bind_file ~/lyx/LyXBind/m.bind

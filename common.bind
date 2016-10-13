@@ -1,4 +1,4 @@
-# -*- text -*-
+
 
 Format 1
 
@@ -16,6 +16,7 @@ Format 1
 # Alt + m 引导区 : 主要用于输入一些常用的特殊字体的字母.
 # Alt + x 引导区 : 用于应付一些特殊的需求.
 # Alt + period 引导区 : 用于输入函数.
+# Alt + a 引导区 : 目前用于输入命令或环境的参数.
 
 # 菜单
 
@@ -52,6 +53,14 @@ Format 1
 
 \bind "M-BackSpace" "buffer-export pdf4"
 \bind "M-backslash" "buffer-view"
+
+# Alt + a 引导区
+
+\bind "M-a 1"       "argument-insert 1"
+\bind "M-a 2"       "argument-insert 2"
+\bind "M-a 3"       "argument-insert 3"
+\bind "M-a 4"       "argument-insert 4"
+\bind "M-a 5"       "argument-insert 5"
 
 # Alt + i 引导区
 
@@ -91,11 +100,12 @@ Format 1
 # 主键盘 4 引导区
 
 \bind "4 2"		"math-insert \sqrt"
-\bind "4 4"		"self-insert 4"
+\bind "4 4"		"command-sequence math-insert \mathistOperator; char-left"
 \bind "4 5"		"math-insert {}"
 
 \bind "4 minus"	"math-insert \underset"
 
+\bind "4 q"		"math-insert \measuredangle"
 \bind "4 t"		"math-insert \triangle"
 
 \bind "4 u"		"math-insert \cdot"
@@ -127,6 +137,9 @@ Format 1
 
 # 主键盘 5 引导区
 
+\bind "5 o"		"command-sequence math-insert \operatorname{}; char-left"
+\bind "5 p"		"command-sequence math-insert \approx"
+
 \bind "5 j"		"command-sequence math-insert ^; math-insert \top; char-right"
 \bind "5 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
 
@@ -145,6 +158,7 @@ Format 1
 
 \bind "7 7"		"font-bold"
 \bind "7 0"		"math-insert \mathscr"
+\bind "7 u"		"font-emph"
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
 \bind "7 8"		"command-sequence math-insert ^; self-insert *; char-right"
