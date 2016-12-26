@@ -6,9 +6,10 @@ Format 1
 
 # Alt + x 引导区
 
-\bind "M-x a"           "command-sequence math-insert \mathrm{Aut}; repeat 4 char-right"
-\bind "M-x S-A"           "math-insert \mathistOperatorAd"
+\bind "M-x a"           "math-insert \mathistOperatorAd"
+\bind "M-x S-A"         "math-insert \mathistOperatorAD"
 \bind "M-x d"		"command-sequence math-insert \mathrm{AdS}; repeat 4 char-right"
+\bind "M-x g"           "math-insert \mathistOperatorgrad"
 \bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
 \bind "M-x i"           "math-insert \mathistOperatorIm"
 \bind "M-x m"           "command-sequence math-insert \mathrm{Mod}; repeat 4 char-right"

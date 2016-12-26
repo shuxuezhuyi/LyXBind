@@ -54,6 +54,17 @@ Format 1
 \bind "M-BackSpace" "buffer-export pdf4"
 \bind "M-backslash" "buffer-view"
 
+\bind "M-1"	"self-insert 1"
+\bind "M-2"	"self-insert 2"
+\bind "M-3"	"self-insert 3"
+\bind "M-4"	"self-insert 4"
+\bind "M-5"	"self-insert 5"
+\bind "M-6"	"self-insert 6"
+\bind "M-7"	"self-insert 7"
+\bind "M-8"	"self-insert 8"
+\bind "M-9"	"self-insert 9"
+\bind "M-0"	"self-insert 0"
+
 # Alt + a 引导区
 
 \bind "M-a 1"       "argument-insert 1"

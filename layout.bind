@@ -32,4 +32,4 @@ Format 1
 \bind "M-n F10"		"layout Exercise*"
 \bind "M-n F11"		"layout Claim*"
 
-\bind "M-n period"		"layout --Separator--"
+\bind "M-n period"		"environment-split"

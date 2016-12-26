@@ -5,6 +5,7 @@ Format 1
 # o 引导区
 
 \bind "S-O"	"self-insert O"
+\bind "M-o"	"self-insert o"
 
 # Greek
 
