@@ -13,6 +13,7 @@ Format 1
 \bind "M-m g"		"command-sequence math-insert \mathbf{G}; repeat 2 char-right"
 \bind "M-m h"		"command-sequence math-insert \mathbb{H}; repeat 2 char-right"
 \bind "M-m k"		"command-sequence math-insert \mathbb{K}; repeat 2 char-right"
+\bind "M-m m"		"command-sequence math-insert \mathbf{M}; repeat 2 char-right"
 \bind "M-m n"		"command-sequence math-insert \mathbb{N}; repeat 2 char-right"
 \bind "M-m p"		"command-sequence math-insert \mathbb{P}; repeat 2 char-right"
 \bind "M-m r"		"command-sequence math-insert \mathbb{R}; repeat 2 char-right"

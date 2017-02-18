@@ -113,6 +113,7 @@ Format 1
 \bind "4 2"		"math-insert \sqrt"
 \bind "4 4"		"command-sequence math-insert \mathistOperator; char-left"
 \bind "4 5"		"math-insert {}"
+\bind "4 0"		"math-insert \mathring"
 
 \bind "4 minus"	"math-insert \underset"
 
@@ -203,10 +204,12 @@ Format 1
 \bind "8 g"	"math-insert \rightarrow"
 \bind "8 x"	"math-insert \xrightarrow"
 
-\bind "8 h"	"math-insert \Longleftarrow"
+\bind "8 S-H"	"math-insert \Longleftarrow"
+\bind "8 h"	"math-insert \Leftarrow"
 \bind "8 j"	"math-insert \top"
 \bind "8 k"	"math-insert \bot"
-\bind "8 l"	"math-insert \Longrightarrow"
+\bind "8 l"	"math-insert \Rightarrow"
+\bind "8 S-L"	"math-insert \Longrightarrow"
 
 \bind "8 c"	"math-insert \wedge"
 \bind "8 v"	"math-insert \vee"
@@ -221,7 +224,7 @@ Format 1
 \bind "8 i"	"math-insert \cdots"
 
 \bind "8 equal"	"math-insert \Longleftrightarrow"
-\bind "8 p"	"math-insert \Longleftrightarrow"
+\bind "8 p"	"math-insert \Leftrightarrow"
 
 # 主键盘 8 9 引导区
 
