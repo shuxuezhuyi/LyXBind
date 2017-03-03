@@ -10,10 +10,7 @@ Format 1
 \bind "M-x S-A"           "math-insert \mathistOperatorAd"
 \bind "M-x d"		"command-sequence math-insert \mathrm{AdS}; repeat 4 char-right"
 \bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
-\bind "M-x i"           "math-insert \mathistOperatorIm"
 \bind "M-x m"           "command-sequence math-insert \mathrm{Mod}; repeat 4 char-right"
-\bind "M-x r"           "math-insert \mathistOperatorRe"
-\bind "M-x t"           "math-insert \mathistOperatortr"
 \bind "M-x v"           "math-insert \mathistOperatorVol"
 \bind "M-x w"           "command-sequence math-insert _; math-insert \mathrm{WP}; repeat 4 char-right"
 
@@ -33,3 +30,4 @@ Format 1
 \bind_file ~/lyx/LyXBind/period.bind
 \bind_file ~/lyx/LyXBind/comma.bind
 \bind_file ~/lyx/LyXBind/m.bind
+\bind_file ~/lyx/LyXBind/operator.bind

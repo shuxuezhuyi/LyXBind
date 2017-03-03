@@ -1,0 +1,14 @@
+# -*- text -*-
+
+Format 1
+
+# Alt + f 引导区, 用于输入数学函数
+
+\bind "M-f g"           "math-insert \mathistOperatorgrad"
+\bind "M-f i"           "math-insert \mathistOperatorIm"
+\bind "M-f r"           "math-insert \mathistOperatorRe"
+\bind "M-f s"           "math-insert \mathistOperatorsupp"
+\bind "M-f t"           "math-insert \mathistOperatortr"
+\bind "M-f S-T"           "math-insert \mathistOperatorarctanh"
+\bind "M-f y"           "math-insert \mathistOperatorarccosh"
+\bind "M-f z"           "math-insert \mathistOperatorarcsinh"

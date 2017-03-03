@@ -167,9 +167,10 @@ Format 1
 \bind "7 3"		"math-insert \mathbb"
 \bind "7 4"		"math-insert \boldsymbol"
 \bind "7 5"		"math-insert \mathsf"
-
+\bind "7 6"		"math-insert \mathbf"
 \bind "7 7"		"font-bold"
 \bind "7 0"		"math-insert \mathscr"
+\bind "7 a"		"math-insert \mathcal"
 \bind "7 u"		"font-emph"
 
 \bind "7 o"		"command-sequence math-insert ^; math-insert \circ; char-right"
@@ -282,5 +283,6 @@ Format 1
 \bind "9 4"		"command-sequence math-insert \langle\rangle; char-left"
 \bind "9 3"		"command-sequence math-insert \Vert\Vert; char-left"
 \bind "9 2"		"command-sequence math-insert ||; char-left"
+\bind "9 1"		"command-sequence math-insert \lfloor\rfloor; char-left"
 
 
