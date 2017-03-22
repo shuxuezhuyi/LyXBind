@@ -2,27 +2,7 @@
 
 Format 1
 
-# 首先是适用于 Teichmüller 领域的快捷键
-
-# Alt + x 引导区
-
-\bind "M-x a"           "math-insert \mathistOperatorAd"
-\bind "M-x S-A"         "math-insert \mathistOperatorAD"
-\bind "M-x b"		"command-sequence math-insert \mathbf{B}; repeat 2 char-right"
-\bind "M-x d"		"command-sequence math-insert \mathrm{AdS}; repeat 4 char-right"
-\bind "M-x g"		"command-sequence math-insert \mathbf{g}; repeat 2 char-right"
-\bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
-\bind "M-x m"           "command-sequence math-insert \mathrm{Mod}; repeat 4 char-right"
-\bind "M-x S-T"           "command-sequence math-insert _; math-insert \mathrm{Th}; repeat 4 char-right"
-\bind "M-x v"           "math-insert \mathistOperatorVol"
-\bind "M-x w"           "command-sequence math-insert _; math-insert \mathrm{WP}; repeat 4 char-right"
-
-# 暂时废弃
-#\bind "M-m S-D"		"command-sequence math-insert \mathscr{D}; repeat 2 char-right"
-#\bind "M-m comma"	"command-sequence math-insert L_{\mathrm{loc}}; repeat 2 char-right"
-#\bind "M-m period"	"command-sequence math-insert W_{\mathrm{loc}}; repeat 2 char-right"
-#\bind "M-m slash"	"command-sequence math-insert H_{\mathrm{loc}}; repeat 2 char-right"
-
+\bind_file ~/lyx/LyXBind/x_TS.bind
 
 # 导入通用的快捷键
 

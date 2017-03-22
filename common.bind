@@ -150,8 +150,10 @@ Format 1
 # 主键盘 5 引导区
 
 \bind "5 o"		"command-sequence math-insert \operatorname{}; char-left"
-\bind "5 p"		"command-sequence math-insert \approx"
+\bind "5 p"		"math-insert \approx"
 
+\bind "5 h"		"math-insert \apprle"
+\bind "5 l"		"math-insert \apprge"
 \bind "5 j"		"command-sequence math-insert ^; math-insert \top; char-right"
 \bind "5 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
 
