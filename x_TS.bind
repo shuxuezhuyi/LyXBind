@@ -10,6 +10,7 @@ Format 1
 \bind "M-x S-A"         "math-insert \mathistOperatorAD"
 \bind "M-x b"		"command-sequence math-insert \mathbf{B}; repeat 2 char-right"
 \bind "M-x d"		"command-sequence math-insert \mathrm{AdS}; repeat 4 char-right"
+\bind "M-x e"           "math-insert \mathistOperatorExt"
 \bind "M-x f"		"command-sequence math-insert \mathbf{f}; repeat 2 char-right"
 \bind "M-x g"		"command-sequence math-insert \mathbf{g}; repeat 2 char-right"
 \bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"

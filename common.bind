@@ -43,6 +43,8 @@ Format 1
 \bind "M-slash"			"command-sequence self-insert -"
 
 \bind "M-h"			"char-left"
+\bind "M-S-J"			"down"
+\bind "M-S-K"			"up"
 \bind "M-l"			"char-right"
 
 \bind "M-j"	"command-sequence self-insert _"
@@ -152,8 +154,8 @@ Format 1
 \bind "5 o"		"command-sequence math-insert \operatorname{}; char-left"
 \bind "5 p"		"math-insert \approx"
 
-\bind "5 h"		"math-insert \apprle"
-\bind "5 l"		"math-insert \apprge"
+\bind "5 h"		"math-insert \apprge"
+\bind "5 l"		"math-insert \apprle"
 \bind "5 j"		"command-sequence math-insert ^; math-insert \top; char-right"
 \bind "5 k"		"command-sequence math-insert ^; math-insert \bot; char-right"
 
@@ -273,6 +275,7 @@ Format 1
 
 \bind "9 S-parenleft"		"math-delim ( )"
 \bind "9 S-asterisk"		"math-delim [ ]"
+\bind "9 S-ampersand"	"math-delim | ."
 \bind "9 S-percent"			"math-delim { }"
 \bind "9 S-dollar"			"math-delim langle rangle" # produces < >
 \bind "9 S-numbersign"			"math-delim Vert Vert"

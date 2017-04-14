@@ -19,6 +19,7 @@ Format 1
 \bind "M-n comma"	"flex-insert HINTAsInset"
 #\bind "M-n space"	"layout Proof"
 #\bind "M-n comma"	"layout HINT"
+\bind "M-n M-m"	"flex-insert Abstract_mathist"
 
 \bind "M-n F1"		"layout Conjecture*"
 \bind "M-n F2"		"layout Lemma*"
