@@ -115,6 +115,7 @@ Format 1
 \bind "4 2"		"math-insert \sqrt"
 \bind "4 4"		"command-sequence math-insert \mathistOperator; char-left"
 \bind "4 5"		"math-insert {}"
+\bind "4 9"		"math-insert \pm"
 \bind "4 0"		"math-insert \mathring"
 
 \bind "4 minus"	"math-insert \underset"
@@ -138,6 +139,7 @@ Format 1
 \bind "4 l"			"math-insert \coloneqq"
 
 \bind "4 c"		"math-insert \cases"
+\bind "4 b"		"math-insert \binom"
 \bind "4 m"		"math-ams-matrix 2 2 pmatrix"
 
 \bind "4 semicolon"	"math-insert \qquad"
@@ -154,6 +156,7 @@ Format 1
 \bind "5 o"		"command-sequence math-insert \operatorname{}; char-left"
 \bind "5 p"		"math-insert \approx"
 
+\bind "5 f"		"math-insert \pitchfork"
 \bind "5 h"		"math-insert \apprge"
 \bind "5 l"		"math-insert \apprle"
 \bind "5 j"		"command-sequence math-insert ^; math-insert \top; char-right"
@@ -261,9 +264,10 @@ Format 1
 \bind "9 o"	"math-insert \notin"
 \bind "9 u"	"math-insert \ni"
 
-\bind "9 h"	"math-insert \neq"
+\bind "9 l"	"math-insert \neq"
 \bind "9 j"	"math-insert \forall"
 \bind "9 k"	"math-insert \exists"
+\bind "9 h"	"math-insert \vartriangleleft"
 
 \bind "9 equal"	"math-insert \cong"
 \bind "9 p"	"math-insert \cong"

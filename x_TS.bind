@@ -13,9 +13,11 @@ Format 1
 \bind "M-x e"           "math-insert \mathistOperatorExt"
 \bind "M-x f"		"command-sequence math-insert \mathbf{f}; repeat 2 char-right"
 \bind "M-x g"		"command-sequence math-insert \mathbf{g}; repeat 2 char-right"
-\bind "M-x h"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
+\bind "M-x h"           "math-insert \mathistOperatorhol"
+\bind "M-x S-H"		"command-sequence math-insert \mathrm{Hom}; repeat 4 char-right"
 \bind "M-x m"           "command-sequence math-insert \mathrm{Mod}; repeat 4 char-right"
-\bind "M-x t"           "command-sequence math-insert _; math-insert \mathrm{Th}; repeat 4 char-right"
+\bind "M-x t"           "math-insert \mathistOperatortw"
+\bind "M-x S-T"           "command-sequence math-insert _; math-insert \mathrm{Th}; repeat 4 char-right"
 \bind "M-x v"           "math-insert \mathistOperatorVol"
 \bind "M-x w"           "command-sequence math-insert _; math-insert \mathrm{WP}; repeat 4 char-right"
 

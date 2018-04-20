@@ -8,7 +8,8 @@ Format 1
 
 \bind_file ~/lyx/LyXBind/common.bind
 \bind_file ~/lyx/LyXBind/ctrl.bind
-\bind_file ~/lyx/LyXBind/o.bind
+#\bind_file ~/lyx/LyXBind/o.bind
+\bind_file ~/lyx/LyXBind/M-o_chinese.bind
 \bind_file ~/lyx/LyXBind/layout.bind
 \bind_file ~/lyx/LyXBind/chinese.bind
 \bind_file ~/lyx/LyXBind/period.bind

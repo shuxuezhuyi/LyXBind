@@ -5,6 +5,7 @@ Format 1
 # Alt + f 引导区, 用于输入数学函数
 
 \bind "M-f a"           "math-insert \mathistOperatorArg"
+\bind "M-f e"           "math-insert \mathistOperatorRes"
 \bind "M-f g"           "math-insert \mathistOperatorgrad"
 \bind "M-f i"           "math-insert \mathistOperatorIm"
 \bind "M-f l"           "math-insert \mathistOperatorLn"

@@ -2,6 +2,9 @@
 
 Format 1
 
+\bind "o" "math-insert o"
+\bind "S-O" "math-insert O"
+
 # Alt + o 引导区
 
 # Greek
