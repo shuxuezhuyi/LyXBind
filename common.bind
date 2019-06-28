@@ -33,7 +33,7 @@ Format 1
 
 # Alt 引导区
 
-#\bind "F13"				"math-mode"
+\bind "F13"				"math-mode"    # 需要配合 lyx.ahk 使用, 效果是用 Alt+空格 切换行内公式环境.
 \bind "M-space"			"math-mode"
 \bind "M-u"			"undo"
 \bind "M-r"			"redo"
@@ -91,6 +91,12 @@ Format 1
 \bind "M-i 0"		"nomencl-insert"
 \bind "M-i semicolon"	"dialog-show-new-inset ref"
 \bind "M-i apostrophe"	"dialog-show-new-inset citation"
+
+\bind "M-i r"   "dialog-show-new-inset ref"
+\bind "M-i u"   "flex-insert URL"
+\bind "M-i i"   "index-insert"
+\bind "M-i l"   "label-insert"
+\bind "M-i c"	"dialog-show-new-inset citation"
 
 # Alt + n 引导区
 
@@ -192,6 +198,7 @@ Format 1
 \bind "7 s"		"math-insert \dot"
 \bind "7 d"		"math-insert \ddot"
 \bind "7 f"		"math-insert \widetilde"
+\bind "7 S-F"   "math-insert \utilde"
 \bind "7 g"		"math-insert \overrightarrow"
 \bind "7 h"		"math-insert \underleftarrow"
 \bind "7 l"		"math-insert \underrightarrow"
