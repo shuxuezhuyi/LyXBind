@@ -53,6 +53,7 @@ Format 1
 \bind "Escape"         "escape"
 \bind "dollar"		"line-end"
 
+\bind "M-equal" "buffer-export pdf2"
 \bind "M-BackSpace" "buffer-export pdf4"
 \bind "M-backslash" "buffer-view"
 
