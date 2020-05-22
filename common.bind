@@ -53,6 +53,7 @@ Format 1
 \bind "Escape"         "escape"
 \bind "dollar"		"line-end"
 
+\bind "M-equal" "buffer-export pdf2"
 \bind "M-BackSpace" "buffer-export pdf4"
 \bind "M-backslash" "buffer-view"
 
@@ -197,8 +198,8 @@ Format 1
 \bind "7 t"		"math-insert \grave"
 \bind "7 s"		"math-insert \dot"
 \bind "7 d"		"math-insert \ddot"
-\bind "7 f"		"math-insert \widetilde"
-\bind "7 S-F"   "math-insert \utilde"
+\bind "7 f"		"math-insert \tilde"
+\bind "7 S-F"   "math-insert \widetilde"
 \bind "7 g"		"math-insert \overrightarrow"
 \bind "7 h"		"math-insert \underleftarrow"
 \bind "7 l"		"math-insert \underrightarrow"
