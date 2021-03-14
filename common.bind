@@ -157,6 +157,8 @@ Format 1
 
 \bind "4 equal"		"math-insert \asymp"
 
+\bind "4 space"     "phantom-insert"
+
 
 # 主键盘 5 引导区
 
