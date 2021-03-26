@@ -7,11 +7,4 @@ Format 1
 
 # 导入通用的快捷键
 
-\bind_file ~/lyx/LyXBind/common.bind
-\bind_file ~/lyx/LyXBind/ctrl.bind
-\bind_file ~/lyx/LyXBind/M-o.bind
-\bind_file ~/lyx/LyXBind/layout.bind
-\bind_file ~/lyx/LyXBind/period.bind
-\bind_file ~/lyx/LyXBind/comma.bind
-\bind_file ~/lyx/LyXBind/m.bind
-\bind_file ~/lyx/LyXBind/operator.bind
+\bind_file ~/lyx/LyXBind/main.bind
