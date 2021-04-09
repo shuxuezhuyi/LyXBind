@@ -1,0 +1,746 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Madrid}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+
+%\usetheme{Singapore}
+% or ...
+
+
+\usepackage[UTF8]{ctex}
+
+%\usepackage[cm-default]{fontspec}
+\usepackage{fontspec}
+\emfontdeclare{\itshape,\upshape,\itshape}
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+\usepackage{xunicode}
+\usepackage{xeCJK}\setCJKmainfont[BoldFont={方正悠黑_508R},ItalicFont={楷体}]{宋体}
+\setCJKsansfont{方正悠黑_503L}
+\setCJKmonofont{仿宋} % 打印机字体, 一般用于 verbatim 之类的环境, 或者通过 \ttfamily 调用
+
+% 插入pdf页面
+\newenvironment{pdfinbeamer}{\setbeamercolor{background canvas}{bg=}}{}
+\end_preamble
+\options UTF8,xetex,aspectratio=169
+\use_default_options false
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Provides stdinsets 1
+
+InsetLayout Flex:PDFinBeamer
+   LyXType     custom
+   LatexName   pdfinbeamer
+   LatexType   Environment
+   Decoration  classic
+   BgColor background
+   MultiPar    true
+   LabelString PDFpages
+End
+\end_local_layout
+\language chinese-simplified
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics xetex
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plain
+\biblatex_bibstyle authoryear
+\biblatex_citestyle authortitle
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+我的\SpecialChar LyX
+快捷键
+\end_layout
+
+\begin_layout Author
+数学主义
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+如何开始
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+如何开始
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+从Gitee下载：
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://gitee.com/mathist/LyXBind
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+这里用到三个文件：main.bind， lyx.ahk 和 template.lyx (Linux用户不需要 lyx.ahk)
+\end_layout
+
+\begin_layout Standard
+\SpecialChar LyX
+\SpecialChar menuseparator
+工具\SpecialChar menuseparator
+首选项\SpecialChar menuseparator
+编辑\SpecialChar menuseparator
+快捷键\SpecialChar menuseparator
+浏览
+\end_layout
+
+\begin_layout Standard
+选中下载到的 main.bind，点确定以关闭“首选项”窗口使之生效。
+\end_layout
+
+\begin_layout Standard
+Windows用户需要下载AutoHotkey：
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.autohotkey.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+安装AutoHotkey之后，双击 lyx.ahk 即可运行。它只有一行代码：
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+lyx.ahk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+!Space::SendInput {F13}
+\end_layout
+
+\begin_layout Standard
+功能是使 Alt + 空格键发送 F13 键。
+\end_layout
+
+\begin_layout Standard
+以 template.lyx 为模板新建文档，即可正常使用这里的所有快捷键。
+\end_layout
+
+\end_deeper
+\begin_layout Section
+用到的键位
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+用到的键位
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/blank.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Ctrl引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Ctrl引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/C.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt+a引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+a引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-a.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt+f引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+f引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-f.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt+i引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+i引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-i.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt+m引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+m引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-m.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt+o引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+o引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-o.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt + 句号引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt + 句号引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-period.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+数字4引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+数字4引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/4.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+数字5引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+数字5引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/5.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+数字7引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+数字7引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/7.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+数字8引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+数字8引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/8.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+数字9引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+数字9引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/9.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt + 逗号引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt + 逗号引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+有26个快捷键
+\end_layout
+
+\begin_layout Standard
+功能：用小写字母输入花体大写字母
+\end_layout
+
+\begin_layout Standard
+例如：按下Alt + 逗号，松手，再按下a，即可得到
+\begin_inset Formula $\mathcal{{\color{red}A}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Alt+n引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+n引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-n.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

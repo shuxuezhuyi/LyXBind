@@ -1,0 +1,360 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties false
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+
+% 证明与提示
+\newenvironment{Proof}[1][证明]
+{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+
+\newenvironment{HINT}[1][提示]{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+\end_preamble
+\options UTF8
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Provides stdinsets 1
+
+InsetLayout Flex:ProofAsInset
+   LyXType     custom
+   LatexName   proof
+   LatexType   Environment
+   Decoration  classic
+   Argument 1
+     LabelString         "Proof Name"
+   EndArgument
+   BgColor background
+   MultiPar    true
+   LabelString Proof
+	ResetsFont true
+End
+
+InsetLayout Flex:HINTAsInset
+   CopyStyle   Flex:ProofAsInset
+   LatexName   HINT
+   LabelString HINT
+End
+\end_local_layout
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorAd}{\operatorname{Ad}}
+{\,\mathrm{Ad}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorAD}{\operatorname{\boldsymbol{\mathrm{Ad}}}}
+{\,\boldsymbol{\mathrm{Ad}}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorarccosh}{\operatorname{arccosh}}
+{\,\mathrm{arccosh}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorarccot}{\operatorname{arccot}}
+{\,\mathrm{arccot}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorarcsinh}{\operatorname{arcsinh}}
+{\,\mathrm{arcsinh}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorarctanh}{\operatorname{arctanh}}
+{\,\mathrm{arctanh}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorArg}{\operatorname{Arg}}
+{\,\mathrm{Arg}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatord}{\mathop{}\!\mathrm{d}}
+{\,\mathrm{d}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatoressinf}{\operatorname{ess.inf}}
+{\,\mathrm{ess.inf}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatoresssup}{\operatorname{ess.sup}}
+{\,\mathrm{ess.sup}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorExt}{\operatorname{Ext}}
+{\,\mathrm{Ext}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorgrad}{\operatorname{grad}}
+{\,\mathrm{grad}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorhol}{\operatorname{hol}}
+{\,\mathrm{hol}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorIm}{\operatorname{Im}}
+{\,\mathrm{Im}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorLength}{\operatorname{Length}}
+{\,\mathrm{Length}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorLn}{\operatorname{Ln}}
+{\,\mathrm{Ln}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorRe}{\operatorname{Re}}
+{\,\mathrm{Re}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorRes}{\operatorname{Res}}
+{\,\mathrm{Res}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorsupp}{\operatorname{supp}}
+{\,\mathrm{supp}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatortr}{\operatorname{tr}}
+{\,\mathrm{tr}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatortw}{\operatorname{tw}}
+{\,\mathrm{tw}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorVol}{\operatorname{Vol}}
+{\,\mathrm{Vol}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+上面这些数学宏是我的快捷键可以调用的。你可以删掉那些你不用的。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+标题
+\end_layout
+
+\begin_layout Author
+作者
+\end_layout
+
+\begin_layout Section
+这是第一节
+\end_layout
+
+\begin_layout Theorem
+这个定理是错的。
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+？？？
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
