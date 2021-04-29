@@ -315,11 +315,14 @@ End
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
-上面这些数学宏是我的快捷键可以调用的。你可以删掉那些你不用的。
+数学宏的定义到此为止。上面这些数学宏是我的快捷键可以调用的。你可以删掉那些你不用的。为了配合 macros.py，如果你要增加数学宏，请在上边追加（不要越过本段话
+），并且命令也要以 
+\backslash
+mathist 开头。
 \end_layout
 
 \end_inset
