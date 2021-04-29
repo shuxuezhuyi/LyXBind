@@ -10,20 +10,20 @@ macros = {} # 用字典储存: 宏 - 宏定义
 
 for line in lines:
     if line.startswith(r'\global\long\def\mathist'):
-        c = line[:-1] # 删掉末尾的换行符
-        m = c.find(r'\mathist')
-        l = c.find('{')
-        key = c[m:l]
-        value = c[l+1:-1]
+        m = line.find(r'\mathist')
+        l = line.find('{') # 最左边的 {
+        r = line.rfind('}') # 最右边的 }
+        key = line[m:l]
+        value = line[l+1:r]
         macros[key] = value
-    elif r'数学宏的定义到此为止。' in line: break
+    elif r'数学宏的定义到此为止' in line: break
 
 write_lines = []
 write_sign = False
 
 for line in lines:
     if not write_sign:
-        if r'数学宏的定义到此为止。' in line: write_sign = True # 直到数学宏的定义结束，都视为 preamble 的内容，不展开宏
+        if r'数学宏的定义到此为止' in line: write_sign = True # 直到数学宏的定义结束，都视为 preamble 的内容，不展开宏
         if line.startswith(r'\global\long\def\mathist'): continue # 不再保留数学宏的定义
         write_lines.append(line)
     else: 
