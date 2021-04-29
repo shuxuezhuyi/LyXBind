@@ -11,7 +11,6 @@ macros = {} # 用字典储存: 宏 - 宏定义
 for line in lines:
     if line.startswith(r'\global\long\def\mathist'):
         c = line[:-1] # 删掉末尾的换行符
-        if c == '': continue
         m = c.find(r'\mathist')
         l = c.find('{')
         key = c[m:l]
