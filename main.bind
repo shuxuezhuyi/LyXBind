@@ -6,16 +6,17 @@ Format 1
 # 实际设计时, 先把好位置让给最重要的命令, 然后再按照命令的特点归类并在相应的引导区中实现.
 # 所谓 Ctrl 引导区与 Alt 引导区, 主要是为了保留某些十分常用的命令, 以及避免误按输入控制字符.
 # Alt + a 引导区 : 目前用于输入命令或环境的参数.
-# Alt + f 引导区 : 数学宏.
 # Alt + i 引导区 : 数字区插入 inset, 字母区用于常用命令.
 # Alt + m 引导区 : 主要用于输入一些常用的特殊字体的字母.
 # Alt + n 引导区 : 数字区与功能键均用于插入 layout, 字母区用于数学模式中与环境密切相关的命令.
 # Alt + o 引导区 : 字母区主要用于输入希腊字母, 余者用于输入别的字母或比较像字母的特殊符号.
+# Alt + s 引导区 : 数学宏.
 # Alt + x 引导区 : 用于应付特定领域的需求, 并未收入本文档中.
 # Alt + 逗号 引导区 : 主要用于输入花体字母.
 # Alt + 句号 引导区 : 用于输入函数.
 # 4 引导区, 5 引导区 : 杂项, 常用命令.
-# 7 引导区 : 用于修饰手段, 例如字体与重音符号.
+# 6 引导区 : 用于正文的修饰手段, 例如字体
+# 7 引导区 : 用于数学字母的修饰手段, 例如字体与重音符号.
 # 8 引导区 : 字母区用于具有明显方向感的符号.
 # 9 引导区 : 数字区用于成对的符号. 字母区主要用于集合相关的符号.
 
@@ -87,8 +88,8 @@ Format 1
 
 # Alt 引导区
 
-\bind "F13"				"math-mode"    # 需要配合 lyx.ahk 使用, 效果是用 Alt+空格 切换行内公式环境.
-\bind "M-space"			"math-mode"
+\bind "F13"				"math-mode"    # 需要配合 lyx.ahk 使用, 效果是用 Alt+空格 切换数学环境.
+\bind "M-space"			"math-mode"   # 切换数学环境
 \bind "M-u"			"undo"
 \bind "M-r"			"redo"
 
@@ -96,19 +97,19 @@ Format 1
 \bind "M-semicolon"		"math-insert +"
 \bind "M-slash"			"command-sequence self-insert -"
 
+\bind "M-f"	    "command-sequence self-insert \\"   # 反斜杠
+
 \bind "M-h"			"char-left"
-\bind "M-S-J"			"down"
-\bind "M-S-K"			"up"
 \bind "M-l"			"char-right"
 
-\bind "M-j"	"command-sequence self-insert _"
-\bind "M-k"	"command-sequence self-insert ^"
+\bind "M-j"	"command-sequence self-insert _"    # 下标
+\bind "M-k"	"command-sequence self-insert ^"     # 上标
 
 \bind "Escape"         "escape"
 \bind "dollar"		"line-end"
 
-\bind "M-equal" "buffer-export pdf2"
-\bind "M-BackSpace" "buffer-export pdf4"
+\bind "M-equal" "buffer-export pdf2"    # 用 pdflatex 编译出 pdf
+\bind "M-BackSpace" "buffer-export pdf4"    # 用 xelatex 编译出 pdf
 \bind "M-backslash" "buffer-view"
 
 \bind "M-1"	"self-insert 1"
@@ -134,21 +135,21 @@ Format 1
 
 
 
-# Alt + f 引导区
+# Alt + s 引导区
 
-\bind "M-f a"           "math-insert \mathistOperatorArg"
-\bind "M-f e"           "math-insert \mathistOperatorRes"
-\bind "M-f g"           "math-insert \mathistOperatorgrad"
-\bind "M-f i"           "math-insert \mathistOperatorIm"
-\bind "M-f S-I"           "math-insert \mathistOperatoressinf"
-\bind "M-f l"           "math-insert \mathistOperatorLn"
-\bind "M-f r"           "math-insert \mathistOperatorRe"
-\bind "M-f s"           "math-insert \mathistOperatorsupp"
-\bind "M-f S-S"           "math-insert \mathistOperatoresssup"
-\bind "M-f t"           "math-insert \mathistOperatortr"
-\bind "M-f S-T"           "math-insert \mathistOperatorarctanh"
-\bind "M-f y"           "math-insert \mathistOperatorarccosh"
-\bind "M-f z"           "math-insert \mathistOperatorarcsinh"
+\bind "M-s a"           "math-insert \mathistOperatorArg"
+\bind "M-s e"           "math-insert \mathistOperatorRes"
+\bind "M-s g"           "math-insert \mathistOperatorgrad"
+\bind "M-s i"           "math-insert \mathistOperatorIm"
+\bind "M-s S-I"           "math-insert \mathistOperatoressinf"
+\bind "M-s l"           "math-insert \mathistOperatorLn"
+\bind "M-s r"           "math-insert \mathistOperatorRe"
+\bind "M-s s"           "math-insert \mathistOperatorsupp"
+\bind "M-s S-S"           "math-insert \mathistOperatoresssup"
+\bind "M-s t"           "math-insert \mathistOperatortr"
+\bind "M-s S-T"           "math-insert \mathistOperatorarctanh"
+\bind "M-s y"           "math-insert \mathistOperatorarccosh"
+\bind "M-s z"           "math-insert \mathistOperatorarcsinh"
 
 
 
@@ -163,11 +164,11 @@ Format 1
 \bind "M-i 3"			"footnote-insert"
 \bind "M-i 4"			"marginalnote-insert"
 \bind "M-i 7"		"box-insert Boxed"
-\bind "M-i 8"		"label-insert"
-\bind "M-i 9"		"index-insert"
-\bind "M-i 0"		"nomencl-insert"
-\bind "M-i semicolon"	"dialog-show-new-inset ref"
-\bind "M-i apostrophe"	"dialog-show-new-inset citation"
+\bind "M-i 8"		"label-insert"  # 插入标签项
+\bind "M-i 9"		"index-insert"  # 插入索引项
+\bind "M-i 0"		"nomencl-insert"    # 插入符号项
+\bind "M-i semicolon"	"dialog-show-new-inset ref" # 交叉引用
+\bind "M-i apostrophe"	"dialog-show-new-inset citation"    # 文献引用
 
 \bind "M-i r"   "dialog-show-new-inset ref"
 \bind "M-i u"   "flex-insert URL"
@@ -180,7 +181,7 @@ Format 1
 # Alt + m 引导区
 
 \bind "M-m c"		"command-sequence math-insert \mathbb{C}; repeat 2 char-right"
-\bind "M-m d"		"math-insert \mathistOperatord"
+\bind "M-m d"		"math-insert \mathistOperatord" # 微分算子 d
 \bind "M-m e"		"command-sequence math-insert \mathbf{E}; repeat 2 char-right"
 \bind "M-m f"		"command-sequence math-insert \mathbf{F}; repeat 2 char-right"
 \bind "M-m g"		"command-sequence math-insert \mathbf{G}; repeat 2 char-right"
@@ -199,6 +200,7 @@ Format 1
 # Alt + n 引导区
 
 \bind "M-n M-n"		"layout Standard"
+\bind "M-n n"           "layout Standard"
 
 \bind "M-n 1"		"layout Conjecture"
 \bind "M-n 2"			"layout Lemma"
@@ -229,7 +231,7 @@ Format 1
 \bind "M-n F10"		"layout Exercise*"
 \bind "M-n F11"		"layout Claim*"
 
-\bind "M-n period"		"environment-split"
+\bind "M-n period"		"environment-split" # 分割环境
 
 \bind "M-n x"		"command-sequence math-display; math-insert \xymatrix"
 \bind "M-n f"		"inset-modify tabular append-row"
@@ -237,7 +239,7 @@ Format 1
 \bind "M-n g"		"inset-modify tabular append-column"
 \bind "M-n s"		"inset-modify tabular delete-column"
 
-\bind "M-n m"		"math-display"
+\bind "M-n m"		"math-display"  # 行间公式
 \bind "M-n a"		"math-mutate align"
 \bind "M-n z"		"math-mutate multline"
 
@@ -260,6 +262,7 @@ Format 1
 #\bind "M-o m"	"math-insert  "
 \bind "M-o n"	"math-insert \nabla"
 \bind "M-o o"	"math-insert \omega"
+\bind "M-o M-o"	"math-insert \omega"
 \bind "M-o p"	"math-insert \pi"
 \bind "M-o q"	"math-insert \phi"
 \bind "M-o r"	"math-insert \rho"
@@ -422,6 +425,24 @@ Format 1
 \bind "5 m"		"math-insert \pmod"
 
 \bind "5 comma"	"math-insert \,"
+
+
+
+# 主键盘 6 引导区
+
+\bind "6 w"	"textstyle-update uwave 1"    # 波浪线
+\bind "6 s"	"textstyle-update uuline 1"    # 双下划线
+\bind "6 x"	"textstyle-update underbar 1"    # 单下划线
+
+\bind "6 e"	"textstyle-update xout 1"    # 斜删除线
+\bind "6 d"	"textstyle-update strikeout 1"    # 删除线
+
+    # 下面这些修改颜色的命令即可用于修改普通文字的颜色, 也可用于修改数学符号的颜色
+\bind "6 r"	"textstyle-update color 16"    # 红色字体
+\bind "6 g"	"textstyle-update color 8"    # 绿色字体
+\bind "6 b"	"textstyle-update color 3"    # 蓝色字体
+
+\bind "6 n"	"textstyle-update shape 3"    # 小型大写字母 \textsc
 
 
 
