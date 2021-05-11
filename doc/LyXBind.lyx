@@ -367,37 +367,6 @@ Alt+a引导的快捷键
 
 \end_deeper
 \begin_layout Section
-Alt+f引导的快捷键
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Alt+f引导的快捷键
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Graphics
-	filename figure/M-f.pdf
-	width 95page%
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Section
 Alt+i引导的快捷键
 \end_layout
 
@@ -491,6 +460,37 @@ Alt+o引导的快捷键
 
 \end_deeper
 \begin_layout Section
+Alt+s引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Alt+s引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/M-s.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
 Alt + 句号引导的快捷键
 \end_layout
 
@@ -575,6 +575,37 @@ status open
 \align center
 \begin_inset Graphics
 	filename figure/5.pdf
+	width 95page%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+数字6引导的快捷键
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+数字6引导的快捷键
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename figure/6.pdf
 	width 95page%
 
 \end_inset
