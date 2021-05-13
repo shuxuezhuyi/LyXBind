@@ -10,7 +10,7 @@ Format 1
 # Alt + m 引导区 : 主要用于输入一些常用的特殊字体的字母.
 # Alt + n 引导区 : 数字区与功能键均用于插入 layout, 字母区用于数学模式中与环境密切相关的命令.
 # Alt + o 引导区 : 字母区主要用于输入希腊字母, 余者用于输入别的字母或比较像字母的特殊符号.
-# Alt + s 引导区 : 数学宏.
+# Alt + d 引导区 : 数学宏.
 # Alt + x 引导区 : 用于应付特定领域的需求, 并未收入本文档中.
 # Alt + 逗号 引导区 : 主要用于输入花体字母.
 # Alt + 句号 引导区 : 用于输入函数.
@@ -99,6 +99,9 @@ Format 1
 
 \bind "M-f"	    "command-sequence self-insert \\"   # 反斜杠
 
+\bind "M-s"                     "char-left-select"
+\bind "M-g"                     "char-right-select"
+
 \bind "M-h"			"char-left"
 \bind "M-l"			"char-right"
 
@@ -135,21 +138,21 @@ Format 1
 
 
 
-# Alt + s 引导区
+# Alt + d 引导区
 
-\bind "M-s a"           "math-insert \mathistOperatorArg"
-\bind "M-s e"           "math-insert \mathistOperatorRes"
-\bind "M-s g"           "math-insert \mathistOperatorgrad"
-\bind "M-s i"           "math-insert \mathistOperatorIm"
-\bind "M-s S-I"           "math-insert \mathistOperatoressinf"
-\bind "M-s l"           "math-insert \mathistOperatorLn"
-\bind "M-s r"           "math-insert \mathistOperatorRe"
-\bind "M-s s"           "math-insert \mathistOperatorsupp"
-\bind "M-s S-S"           "math-insert \mathistOperatoresssup"
-\bind "M-s t"           "math-insert \mathistOperatortr"
-\bind "M-s S-T"           "math-insert \mathistOperatorarctanh"
-\bind "M-s y"           "math-insert \mathistOperatorarccosh"
-\bind "M-s z"           "math-insert \mathistOperatorarcsinh"
+\bind "M-d a"           "math-insert \mathistOperatorArg"
+\bind "M-d e"           "math-insert \mathistOperatorRes"
+\bind "M-d g"           "math-insert \mathistOperatorgrad"
+\bind "M-d i"           "math-insert \mathistOperatorIm"
+\bind "M-d S-I"           "math-insert \mathistOperatoressinf"
+\bind "M-d l"           "math-insert \mathistOperatorLn"
+\bind "M-d r"           "math-insert \mathistOperatorRe"
+\bind "M-d s"           "math-insert \mathistOperatorsupp"
+\bind "M-d S-S"           "math-insert \mathistOperatoresssup"
+\bind "M-d t"           "math-insert \mathistOperatortr"
+\bind "M-d S-T"           "math-insert \mathistOperatorarctanh"
+\bind "M-d y"           "math-insert \mathistOperatorarccosh"
+\bind "M-d z"           "math-insert \mathistOperatorarcsinh"
 
 
 
