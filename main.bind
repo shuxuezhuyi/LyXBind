@@ -433,6 +433,8 @@ Format 1
 
 # 主键盘 6 引导区
 
+## 这些 textstyle-update 的参数可以在 LyX 的消息栏中显示“debug”调试信息之后看到
+
 \bind "6 w"	"textstyle-update uwave 1"    # 波浪线
 \bind "6 s"	"textstyle-update uuline 1"    # 双下划线
 \bind "6 x"	"textstyle-update underbar 1"    # 单下划线
@@ -440,9 +442,9 @@ Format 1
 \bind "6 e"	"textstyle-update xout 1"    # 斜删除线
 \bind "6 d"	"textstyle-update strikeout 1"    # 删除线
 
-    # 下面这些修改颜色的命令即可用于修改普通文字的颜色, 也可用于修改数学符号的颜色
+## 下面这些修改颜色的命令即可用于修改普通文字的颜色, 也可用于修改数学符号的颜色
 \bind "6 r"	"textstyle-update color 16"    # 红色字体
-\bind "6 g"	"textstyle-update color 8"    # 绿色字体
+\bind "6 g"	"textstyle-update color 17"    # 暗青色字体
 \bind "6 b"	"textstyle-update color 3"    # 蓝色字体
 
 \bind "6 n"	"textstyle-update shape 3"    # 小型大写字母 \textsc
