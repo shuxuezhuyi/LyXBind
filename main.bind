@@ -497,6 +497,7 @@ Format 1
 \bind "8 d"	"math-insert \uparrow"
 \bind "8 f"	"math-insert \downarrow"
 \bind "8 g"	"math-insert \rightarrow"
+\bind "8 S-G"   "math-insert \rightrightarrows"
 \bind "8 x"	"math-insert \xrightarrow"
 
 \bind "8 S-H"	"math-insert \Longleftarrow"
@@ -575,7 +576,7 @@ Format 1
 \bind "9 S-numbersign"			"math-delim Vert Vert"
 \bind "9 S-at"			"math-delim | |"
 
-\bind "9 9"		"command-sequence self-insert (); char-left"    # 手工列表需要 self-insert
+\bind "9 9"		"command-sequence math-insert (); char-left"
 \bind "9 8"		"command-sequence math-insert []; char-left"
 \bind "9 7"		"math-delim . |"
 \bind "9 5"		"command-sequence math-insert \{\}; char-left"
