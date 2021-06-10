@@ -399,6 +399,7 @@ Format 1
 \bind "4 l"			"math-insert \coloneqq"
 
 \bind "4 c"		"math-insert \cases"
+\bind "4 S-C"   "command-sequence math-delim . }; math-matrix 1 2" # 反向 cases
 \bind "4 b"		"math-insert \binom"
 \bind "4 m"		"math-ams-matrix 2 2 pmatrix"
 
