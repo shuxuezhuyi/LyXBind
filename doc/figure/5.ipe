@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20140310130016" modified="D:20210326091911"/>
+<info created="D:20140310130016" modified="D:20210619212942"/>
 <preamble>\usepackage{wasysym}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -563,5 +563,7 @@ h
 268 704 l
 </path>
 <text transformations="translations" pos="324 708" stroke="red" type="label" width="19.925" height="8.226" depth="0.1" valign="baseline">空隙</text>
+<text matrix="1 0 0 1 -72 32" transformations="translations" pos="332 772" stroke="red" type="label" width="9.963" height="7.879" depth="0.25" valign="baseline">☆</text>
+<text matrix="1 0 0 1 -40 32" transformations="translations" pos="332 772" stroke="red" type="label" width="9.963" height="7.929" depth="0.2" valign="baseline">★</text>
 </page>
 </ipe>

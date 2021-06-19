@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20140310130016" modified="D:20210509223105"/>
+<info created="D:20140310130016" modified="D:20210619211642"/>
 <preamble>\PassOptionsToPackage{normalem}{ulem}
 \usepackage{ulem}</preamble>
 <ipestyle name="basic">
@@ -557,7 +557,7 @@ h
 <text matrix="1 0 0 1 -139.124 1.6031" transformations="translations" pos="268 772" stroke="red" type="label" width="29.888" height="8.31" depth="2.49" valign="baseline">\xout{\textcolor{blue}{斜}\textcolor{blue}{删}\textcolor{blue}{除}}</text>
 <text transformations="translations" pos="252 708" stroke="black" type="label" width="24.06" height="6.808" depth="0" valign="baseline">\textsc{\textcolor{red}{Caps}}</text>
 <text matrix="1 0 0 1 4 0" transformations="translations" pos="168 772" stroke="black" type="label" width="19.925" height="8.477" depth="0.06" valign="baseline">\textcolor{red}{红色}</text>
-<text matrix="1 0 0 1 44 -32" transformations="translations" pos="168 772" stroke="black" type="label" width="19.925" height="8.476" depth="0.3" valign="baseline">\textcolor{green}{绿色}</text>
+<text matrix="1 0 0 1 44 -32" transformations="translations" pos="168 772" stroke="black" type="label" width="19.925" height="8.239" depth="0.62" valign="baseline">\textcolor{teal}{暗青}</text>
 <text matrix="1 0 0 1 60 -64" transformations="translations" pos="168 772" stroke="black" type="label" width="19.925" height="8.47" depth="0.25" valign="baseline">\textcolor{blue}{蓝色}</text>
 </page>
 </ipe>

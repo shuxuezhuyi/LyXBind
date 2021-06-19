@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20140310130016" modified="D:20210325224124"/>
+<info created="D:20140310130016" modified="D:20210619212338"/>
 <preamble>\usepackage{mathtools}
 \usepackage{cancel}</preamble>
 <ipestyle name="basic">
@@ -584,5 +584,6 @@ h
 <text matrix="1 0 0 1 -4 4" transformations="translations" pos="392 708" stroke="red" type="label" width="15.798" height="4.374" depth="0.34" valign="baseline" style="math">\cancel{{\color{blue}aaa}}</text>
 <text transformations="translations" pos="420 804" stroke="red" type="label" width="7.749" height="4.62" depth="0" valign="baseline" style="math">\asymp</text>
 <text matrix="1 0 0 1 -24 4" transformations="translations" pos="192 680" stroke="red" type="label" width="128.131" height="8.314" depth="1.93" valign="baseline">phantom：我才是真正的空格</text>
+<text matrix="1 0 0 1 -24 -80" transformations="translations" pos="188 804" stroke="red" type="label" width="19.925" height="8.065" depth="0.34" valign="baseline">反向</text>
 </page>
 </ipe>
