@@ -15,6 +15,13 @@
 {\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
 
 \newenvironment{HINT}[1][提示]{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+
+% 增加可用符号
+\usepackage{newunicodechar}
+% 用于 ☆ ★ 的字体
+\usepackage{bbding}
+\newunicodechar{☆}{\FiveStarOpen}
+\newunicodechar{★}{\FiveStar}
 \end_preamble
 \options UTF8
 \use_default_options true
@@ -331,7 +338,7 @@ mathist 开头。
 \end_layout
 
 \begin_layout Title
-标题
+☆标题★
 \end_layout
 
 \begin_layout Author
