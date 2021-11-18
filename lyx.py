@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# 用 pip3 install PyUserInput 来安装 pykeyboard，不要用 pip3 install pykeyboard ！
 
 from pykeyboard import *
 
