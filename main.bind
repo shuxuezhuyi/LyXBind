@@ -32,9 +32,9 @@ Format 1
 \bind "F6"			"menu-open document"
 \bind "F7"			"menu-open tools"
 \bind "F8"			"menu-open help"
+# F9 已被 shortcuts.py 占用
 #\bind "F10"			"ui-toggle fullscreen"
-
-
+# F13 在后面已经有绑定的命令
 
 # Ctrl 引导区
 # 这里的 math-insert 纯粹是为了避免误按的时候输入控制字符, 因为有时候在 LyX 编辑界面看不见控制字符.
@@ -54,7 +54,7 @@ Format 1
 \bind "C-m"			"math-display"
 \bind "C-n"			"math-insert n"
 \bind "C-o"			"math-insert o"
-\bind "C-p"			"clipboard-paste"
+\bind "C-p"			"paste latex"  # 特殊粘贴: 从 LaTeX 粘贴
 \bind "C-q"			"math-insert q"
 \bind "C-r"			"math-insert r"
 \bind "C-s"			"buffer-write"
@@ -72,6 +72,7 @@ Format 1
 \bind "C-4"			"math-insert 4"
 \bind "C-5"			"math-insert 5"
 \bind "C-6"			"math-insert 6"
+#\bind "C-6"			"buffer-switch ~/.ipe/lyx2ipe.lyx"  # 本来是配合 shortcuts.py 用 LyX 协助 Ipe 编辑文本的, 但现在不这么做了
 \bind "C-7"			"math-insert 7"
 \bind "C-8"			"math-insert 8"
 \bind "C-9"			"math-insert 9"
