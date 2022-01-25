@@ -25,8 +25,8 @@
 \setsansfont{CMU Sans Serif}
 \setmonofont{CMU Typewriter Text}
 \usepackage{xunicode}
-\usepackage{xeCJK}\setCJKmainfont[BoldFont={方正悠黑_508R},ItalicFont={楷体}]{宋体}
-\setCJKsansfont{方正悠黑_503L}
+\usepackage{xeCJK}\setCJKmainfont[BoldFont={黑体},ItalicFont={楷体}]{宋体}
+\setCJKsansfont{宋体}
 \setCJKmonofont{仿宋} % 打印机字体, 一般用于 verbatim 之类的环境, 或者通过 \ttfamily 调用
 
 % 插入pdf页面
