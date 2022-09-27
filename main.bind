@@ -216,6 +216,8 @@ Format 1
 \bind "M-n 9"		"layout Remark"
 \bind "M-n 0"		"layout Exercise"
 \bind "M-n minus"		"layout Claim"
+
+\bind "M-n c"	"flex-insert CheckedAsInset"
 \bind "M-n space"	"flex-insert ProofAsInset"
 \bind "M-n comma"	"flex-insert HINTAsInset"
 #\bind "M-n space"	"layout Proof"
