@@ -384,7 +384,7 @@ Format 1
 
 \bind "4 q"		"math-insert \measuredangle"
 \bind "4 t"		"math-insert \triangle"
-
+\bind "4 y"       "command-sequence ert-insert; self-insert \checkmark; char-right" # 打勾
 \bind "4 u"		"math-insert \cdot"
 
 \bind "4 i"		"command-sequence math-insert ^; self-insert -1; char-right"
@@ -403,6 +403,7 @@ Format 1
 \bind "4 c"		"math-insert \cases"
 \bind "4 S-C"   "command-sequence math-delim . }; math-matrix 1 2" # 反向 cases
 \bind "4 b"		"math-insert \binom"
+\bind "4 n"      "command-sequence self-insert ×" # 打叉
 \bind "4 m"		"math-ams-matrix 2 2 pmatrix"
 
 \bind "4 semicolon"	"math-insert \qquad"

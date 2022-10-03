@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 此脚本仅限 Linux 使用. 目前仅在 Debian 11 (bullseye) + Python 3.9.2 + PyUserInput 0.1.11 + pynput 1.7.5 + LyX 2.3.6 + Ipe 7.2.23 中测试
+# 此脚本仅限 Linux 使用. 目前仅在 Debian 11 (bullseye) + Python 3.9.2 + PyUserInput 0.1.11 + pynput 1.7.5~1.7.6 + pyperclip 1.8.2 + LyX 2.3.6 + Ipe 7.2.23 中测试
 # 先启动 LyX, 再加载本程序
 # 用 pip3 install PyUserInput 来安装 pykeyboard，不要用 pip3 install pykeyboard ！
 # pip3 install pynput
