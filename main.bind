@@ -193,6 +193,7 @@ Format 1
 \bind "M-m m"		"command-sequence math-insert \mathbf{M}; repeat 2 char-right"
 \bind "M-m n"		"command-sequence math-insert \mathbb{N}; repeat 2 char-right"
 \bind "M-m p"		"command-sequence math-insert \mathbb{P}; repeat 2 char-right"
+\bind "M-m q"		"command-sequence math-insert \mathbb{Q}; repeat 2 char-right"
 \bind "M-m r"		"command-sequence math-insert \mathbb{R}; repeat 2 char-right"
 \bind "M-m s"		"command-sequence math-insert \mathscr{S}; repeat 2 char-right"
 \bind "M-m t"		"command-sequence math-insert \mathfrak{T}; repeat 2 char-right"
