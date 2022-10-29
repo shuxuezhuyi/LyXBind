@@ -550,6 +550,9 @@ Format 1
 \bind "8 equal"	"math-insert \Longleftrightarrow"
 \bind "8 p"	"math-insert \Leftrightarrow"
 
+\bind "8 comma"     "math-insert \prec"
+\bind "8 period"    "math-insert \succ"
+
 
 
 # 主键盘 8 9 引导区
