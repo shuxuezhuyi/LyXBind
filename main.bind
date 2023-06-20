@@ -261,7 +261,7 @@ Format 1
 \bind "M-o f"	"math-insert \varphi"
 \bind "M-o g"	"math-insert \gamma"
 \bind "M-o h"	"math-insert \eta"
-#\bind "M-o i"	"math-insert "
+\bind "M-o i"	"math-insert \iota"
 \bind "M-o j"	"math-insert \psi"
 \bind "M-o k"	"math-insert \kappa"
 \bind "M-o l"	"math-insert \lambda"
