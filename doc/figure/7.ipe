@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20140310130016" modified="D:20210326134007"/>
+<ipe version="70218" creator="Ipe 7.2.26">
+<info created="D:20140310130016" modified="D:20241105104141"/>
 <preamble>\usepackage{mathrsfs}</preamble>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
@@ -163,12 +163,11 @@ h
 h
 </path>
 </symbol>
-<pen name="fat" value="1.2"/>
-<pen name="heavier" value="0.8"/>
-<pen name="ultrafat" value="2"/>
-<symbolsize name="large" value="5"/>
-<symbolsize name="small" value="2"/>
-<symbolsize name="tiny" value="1.1"/>
+<anglesize name="22.5 deg" value="22.5"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="90 deg" value="90"/>
 <arrowsize name="large" value="10"/>
 <arrowsize name="small" value="5"/>
 <arrowsize name="tiny" value="3"/>
@@ -202,17 +201,6 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dashed" value="[4] 0"/>
 <dashstyle name="dotted" value="[1 3] 0"/>
-<textsize name="large" value="\large"/>
-<textsize name="small" value="\small"/>
-<textsize name="tiny" value="\tiny"/>
-<textsize name="Huge" value="\Huge"/>
-<textsize name="LARGE" value="\LARGE"/>
-<textsize name="Large" value="\Large"/>
-<textsize name="footnote" value="\footnotesize"/>
-<textsize name="huge" value="\huge"/>
-<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
-<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
-<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <gridsize name="10 pts (~3.5 mm)" value="10"/>
 <gridsize name="14 pts (~5 mm)" value="14"/>
 <gridsize name="16 pts (~6 mm)" value="16"/>
@@ -222,11 +210,23 @@ h
 <gridsize name="4 pts" value="4"/>
 <gridsize name="56 pts (~20 mm)" value="56"/>
 <gridsize name="8 pts (~3 mm)" value="8"/>
-<anglesize name="22.5 deg" value="22.5"/>
-<anglesize name="30 deg" value="30"/>
-<anglesize name="45 deg" value="45"/>
-<anglesize name="60 deg" value="60"/>
-<anglesize name="90 deg" value="90"/>
+<pen name="fat" value="1.2"/>
+<pen name="heavier" value="0.8"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <tiling name="falling" angle="-60" step="4" width="1"/>
 <tiling name="rising" angle="30" step="4" width="1"/>
 </ipestyle>
@@ -579,5 +579,6 @@ h
 <text transformations="translations" pos="348 744" stroke="red" type="label" width="9.963" height="6.808" depth="4.95" valign="baseline" style="math">\underrightarrow{\color{blue}A}</text>
 <text transformations="translations" pos="420 804" stroke="red" type="label" width="7.749" height="4.62" depth="0" valign="baseline" style="math">\equiv</text>
 <text transformations="translations" pos="372 772" stroke="red" type="label" width="7.749" height="4.62" depth="0" valign="baseline" style="math">\equiv</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="220 740" stroke="red" type="label" width="9.963" height="10.463" depth="0" valign="baseline" style="math">\overleftarrow{\color{blue}A}</text>
 </page>
 </ipe>

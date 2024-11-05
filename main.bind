@@ -366,6 +366,7 @@ Format 1
 
 \bind "M-period z"	    "math-insert \sin"
 \bind "M-period S-Z"	"math-insert \sinh"
+\bind "M-period c"		"command-sequence math-insert \mathscr{C}; repeat 2 char-right"
 \bind "M-period m"	    "math-insert \min"
 \bind "M-period S-M"	"math-insert \max"
 \bind "M-period n"	    "math-insert \ln"
@@ -506,6 +507,7 @@ Format 1
 \bind "7 f"		"math-insert \tilde"
 \bind "7 S-F"   "math-insert \widetilde"
 \bind "7 g"		"math-insert \overrightarrow"
+\bind "7 S-G"	"math-insert \overleftarrow"
 \bind "7 h"		"math-insert \underleftarrow"
 \bind "7 l"		"math-insert \underrightarrow"
 \bind "7 x"		"math-insert \underline"
